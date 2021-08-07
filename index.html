@@ -1,0 +1,27 @@
+<html>
+    <head>
+        <title>Project-78</title>
+        <link rel="stylesheet" href="style.css" type="text/css">
+    </head>
+    <body>
+        <center>
+            <h1>My Family Book</h1>
+            <img src="https://i.postimg.cc/MKdhy06Z/family.jpg" id="family" width="150px" height="200px">
+            <h4 id="family_name"></h4>
+            <button onclick="update();">Next<button>
+        </center>
+        <script >var images = ["https://i.postimg.cc/wjMnFtMX/father.jpg" , "https://i.postimg.cc/5ymDKL83/bro.jpg", "https://i.postimg.cc/JnL6wtrd/sister.jpg", "https://i.postimg.cc/bw5W5zSK/mother.jpg"];
+            var names = ["Dilip Jarwal", "Chaitanya Jarwal", "Kashvi Jarwal", "Nandni Jarwal"];
+            var i = 0;
+            function update()
+            {
+                document.getElementById("family").src = updatedImage[i];
+                document.getElementById("family_name").innerHTML = updatedName[i];
+                i++;
+                if(i==4){
+                    i=0;
+            }
+        }
+        </script>
+    </body>
+</html>
